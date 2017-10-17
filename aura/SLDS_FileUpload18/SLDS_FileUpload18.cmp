@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" 
+                access="global" >
+
+<lightning:fileUpload label="File Upload Upto 2 GB"
+                      multiple="true"
+                      accept=".pdf, .png, .jpg"
+                      recordId="{!v.recordId}" 
+                      aura:id="multipleUpload"
+                      onuploadfinished="{!c.handleFileUpload}" />
+
+</aura:component>
